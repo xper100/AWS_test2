@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_APP_NAME=jyp_container
+DOCKER_APP_NAME=jyp_docker
 
 cd /home/ec2-user/jyp
 
