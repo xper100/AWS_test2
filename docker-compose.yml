@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jyp_container
+    container_name: jyp_docker
     volumes:
       - /home/ec2-user/jyp/:/home/jyp
     ports:
