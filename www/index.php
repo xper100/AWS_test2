@@ -1,6 +1,6 @@
 <?php
 
-echo '칭찬해 칭호받은 에반이올시다 제우스 팬서 콥 짱';
+echo '칭찬해 칭호받은 에반이올시다 제우스 팬서 콥 짱     \n       ';
 
 
 $db_host = "host=evan.ca4xmd0qmadn.ap-northeast-2.rds.amazonaws.com";
@@ -12,7 +12,7 @@ $db_name = "dbname=evan";
 $connection_info = "$db_host $db_port $db_user $db_password $db_name";
 $conn = pg_connect($connection_info);
 
-$query = "select test from evan";
+$query = "select test from evan limit 1";
 $result = pg_query($conn, $query);
 
 $db_result = "";
