@@ -17,7 +17,7 @@ $result = pg_query($conn, $query);
 
 $db_result = "";
 while ($row = pg_fetch_assoc($result)) (
-    $db_result = $row['evan']
+    $db_result = $row['evan'];
 )
 
 
