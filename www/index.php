@@ -16,9 +16,9 @@ $query = "select * from evan;";
 $result = pg_query($conn, $query);
 
 $db_result = "";
-while ($row = pg_fetch_assoc($result)) (
+while ($row = pg_fetch_assoc($result)) {
     $db_result = $row['evan'];
-)
+}
 
 
 echo " ".$db_result;
