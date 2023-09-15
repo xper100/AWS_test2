@@ -12,7 +12,7 @@ $db_name = "dbname=evan";
 $connection_info = "$db_host $db_port $db_user $db_password $db_name";
 $conn = pg_connect($connection_info);
 
-$query = "select * from evan";
+$query = "select test from evan";
 $result = pg_query($conn, $query);
 
 $db_result = [];
