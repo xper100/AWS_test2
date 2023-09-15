@@ -21,4 +21,7 @@ while ($row = pg_fetch_assoc($result)) {
 }
 
 
-echo $db_result[0];
+echo <<<EOM
+EC2 : 칭찬해 칭호받은 에반이올시다 제우스 팬서 콥 짱<br/>
+RDS : $db_result[0]
+;
