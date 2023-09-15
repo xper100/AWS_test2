@@ -15,13 +15,10 @@ $conn = pg_connect($connection_info);
 $query = "select test from evan";
 $result = pg_query($conn, $query);
 
-$db_result = [];
+$db_result = "";
 while ($row = pg_fetch_assoc($result)) {
-    $db_result[] = $row['test'];
+    $db_result = $row['test'];
 }
 
 
-echo <<<EOM
-EC2 : 칭찬해 칭호받은 에반이올시다 제우스 팬서 콥 짱<br/>
-RDS : $db_result[0]
-;
+echo $db_result;
