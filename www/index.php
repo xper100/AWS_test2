@@ -7,7 +7,7 @@ $db_host = "host=evan.ca4xmd0qmadn.ap-northeast-2.rds.amazonaws.com"
 $db_port = "port=5432";
 $db_user = "user=postgres";
 $db_password = "password=dpqks12345";
-$db_name = "dbname=jyp";
+$db_name = "dbname=evan";
 
 $connection_info = "$db_host $db_port $db_user $db_password $db_name";
 $conn = pg_connect($connection_info);
